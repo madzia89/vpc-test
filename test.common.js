@@ -1,8 +1,13 @@
-// min 2-3 tests for every function 
+// min 2-3 tests for every function
 
+
+// return only unique numbers in new array
 const _unique = (_arrayOfNumbers) => {
-    // return only unique numbers in new array
+    return  [...new Set(_arrayOfNumbers)]
 }
+
+console.log('unique', _unique([1,2,3,4,4,5,6,7,8,9,9]))
+console.log('unique2', _unique([8,8,8,8,8,8,8,88]))
 
 ////////////////////////////////
 // if value is odd then true
@@ -51,9 +56,6 @@ console.log('realMap: ' + [1, 5, 10, 15].map(el => {
     return el * 2
 }))
 console.log('first _mapForArray: ' + _mapForArray([1, 5, 10, 15]))
-
-
-
 
 
 const _mapForObject = (_object, callback) => {

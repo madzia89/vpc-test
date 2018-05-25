@@ -5,13 +5,21 @@
 }
 
 #h1-to-fadein-fadeout {
+    color: white;
+    animation-delay: 1s;
     animation-duration: 3s;
     animation-name: fadeIn;
     animation-iteration-count: infinite;
 }
 
 @keyframes fadeIn {
-    0%{color: white}
-    50%{color: black}
-    100%{color: white}
+    0% {
+        color: white
+    }
+    50% {
+        color: black
+    }
+    100% {
+        color: white
+    }
 }
