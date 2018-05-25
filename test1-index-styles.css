@@ -1,0 +1,17 @@
+.div-to-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#h1-to-fadein-fadeout {
+    animation-duration: 3s;
+    animation-name: fadeIn;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fadeIn {
+    0%{color: white}
+    50%{color: black}
+    100%{color: white}
+}
